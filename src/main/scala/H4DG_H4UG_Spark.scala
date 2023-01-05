@@ -11,7 +11,7 @@ object H4DG_H4UG_Spark {
     val e: Long = ((2.0 / 3.0) * n * math.log(n) + (0.38481 * n)).toLong
     val directed: Boolean = if (args.contains("-u")) false else true
 
-    val conf = new SparkConf().setAppName("NoisySKG")
+    val conf = new SparkConf().setAppName("H4DG-H4UG for Spark")
     val sc = new SparkContext(conf)
     sc.setLogLevel("ERROR")
 
